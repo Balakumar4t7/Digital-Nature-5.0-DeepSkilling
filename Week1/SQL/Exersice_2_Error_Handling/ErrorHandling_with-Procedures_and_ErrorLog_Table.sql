@@ -37,7 +37,8 @@ commit;
 end //
 DELIMITER ;
 
-call SafeTransferFund(100,2,500);
+call SafeTransferFund(1,2,500);
 
 select * from accounts;
 select * from ErrorLog;
+
