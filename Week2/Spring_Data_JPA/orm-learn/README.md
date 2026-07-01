@@ -8,8 +8,11 @@
 
 ## Done implementing the Service Methods in CountryService Class and tested for methods(Adding new country , deleting country ,updating county, get all the cuntries operations)
 
-### Output 1
+
 ![Exercise 2 Output 1](output/exersice2_1.png)
 
-### Output 2
 ![Exercise 2 Output 2](output/exersice2_2.png)
+
+## Implemented Coustom Query using @Query Annotation
+
+![Exercise 3 Outputs](output/qurey_method.png)

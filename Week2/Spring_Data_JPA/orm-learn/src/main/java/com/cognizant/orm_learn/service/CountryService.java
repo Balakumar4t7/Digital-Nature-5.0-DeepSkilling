@@ -46,5 +46,9 @@ public class CountryService {
 		countryRepository.save(country);
 		
 	}
+	
+	public List<Country> getCountryByWord(String word) {
+		 return countryRepository.getAllCountryMatchesWords(word);
+	}
 
 }

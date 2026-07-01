@@ -28,11 +28,12 @@ public class OrmLearnApplication {
 		log.info("Inside main ! ");
 		  countryService = context.getBean(CountryService.class);
 		 
-		  testGetAllCountries();
-		  testGetCountryByCode();
-		  testAddNewCountry();
-		  testDeleteCountryByCode();
-		  testUpdateCountryByCode();
+//		  testGetAllCountries();
+//		  testGetCountryByCode();
+//		  testAddNewCountry();
+//		  testDeleteCountryByCode();
+//		  testUpdateCountryByCode();
+		  testGetCountryByWord();
 	}
 	
 	public static void testGetAllCountries() {
@@ -77,6 +78,15 @@ public class OrmLearnApplication {
 		String code="In";
 		countryService.updateCountryByCode(code,updatedCountry);
 		log.info("Updated countryCode {} to countryCode {}",code,updatedCountry.getCode());
+	}
+	
+	
+	public static void testGetCountryByWord() {
+		log.info("testGetCountryByWord() Started " );
+		String word = "ou";
+		List<Country> country=  countryService.getCountryByWord(word);
+		log.debug("Country that Matches : {} ",country);
+		log.info("testGetCountryByWord() Ended here ");
 	}
 
 }
