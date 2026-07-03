@@ -15,17 +15,9 @@ public class SpringLearnApplication {
     private static final Logger log = LoggerFactory.getLogger(SpringLearnApplication.class);
     private  static Country country;
 	public static void main(String[] args) {
-		SpringApplication.run(SpringLearnApplication.class, args);
+        SpringApplication.run(SpringLearnApplication.class, args);
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("country.xml");
-        country = context.getBean(Country.class);
-        displayCountry();
-	}
 
-    public static void displayCountry(){
-        log.info("Display method  from main is Started");
-        log.debug("Country {}" ,country);
-        log.info("Country Displayed and Existing form Dispaly method");
     }
 
 }
