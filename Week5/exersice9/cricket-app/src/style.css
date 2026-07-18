@@ -1,0 +1,11 @@
+.App{
+    border: solid 1px;
+    justify-content: center;
+    align-items: center;
+    max-width: max-content;
+    padding: 20px;
+}
+
+.odd-player{
+    padding: 10px;
+}
